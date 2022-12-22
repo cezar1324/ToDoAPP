@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/taskCellContainer"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="5dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/completeButton"
+            android:layout_marginHorizontal="15dp"
+            android:src="@drawable/unchecked_24"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/checkbox"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:text="@string/placeholder"/>
+
+
+<!--        <TextView-->
+
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/descr"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_weight="1"-->
+<!--            style="@style/TextAppearance.AppCompat.Title"-->
+<!--            android:text="@string/placeholder"/>-->
+
+
+        <TextView
+            android:layout_marginHorizontal="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dueTime"
+            android:layout_marginTop="10dp"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:text="@string/placeholder"/>
+        
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_marginHorizontal="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/descr"
+            android:layout_marginTop="40dp"
+            android:text="@string/placeholder"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
